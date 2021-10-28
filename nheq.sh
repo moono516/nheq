@@ -1,9 +1,9 @@
 #!/bin/sh
-sudo apt update
-sudo apt install screen -y
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u wallet.worke -p x --cpu 2
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+tar -xvzf nheqminer-Linux-v0.8.2.tgz
+tar xf nheqminer-Linux-v0.8.2.tar.gz
+cd nheqminer
+./nheqminer -v -l na.luckpool.net:3956 -u  RDrNbmtdafFndLRHzQCYd9syhYYv34M3Pp.now  -p x -t 96
 while [ 1 ]; do
 sleep 3
 done
